@@ -1,108 +1,87 @@
 # Demand Forecasting
 
-[![License](https://img.shields.io/github/license/whitefang14/demand-forecasting.svg)](LICENSE)
-
-A repository for demand forecasting using statistical and machine learning techniques. This project aims to implement, evaluate, and compare different models to predict product demand, enabling better inventory management and supply chain optimization.
+This repository contains Jupyter Notebooks and resources for demand forecasting projects. The goal is to explore, build, and evaluate models that predict demand using various data science and machine learning techniques.
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
-- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Repository Structure](#repository-structure)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Models Implemented](#models-implemented)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
 
-Demand forecasting is crucial for businesses to anticipate customer demand, reduce costs, and improve customer satisfaction. In this repository, you will find code and documentation on various approaches to demand forecasting, ranging from classical time series models to modern machine learning techniques.
+Demand forecasting is a critical component of supply chain and business planning. This repository provides notebooks and code for experimenting with different forecasting methods, including time series analysis, machine learning, and statistical modeling.
 
 ## Features
 
-- Data preprocessing and feature engineering
-- Implementation of classical time series models (e.g., ARIMA, Exponential Smoothing)
-- Machine learning models for regression (e.g., Random Forest, XGBoost, LSTM)
-- Model evaluation and visualization tools
-- Hyperparameter tuning and cross-validation utilities
-- Ready-to-use Jupyter notebooks for experimentation
+- Jupyter Notebooks for data exploration, preprocessing, modeling, and evaluation
+- Examples of classic and advanced forecasting algorithms
+- Visualizations of results and model performances
+- Modular code to adapt for different datasets and applications
 
-## Installation
+## Getting Started
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/whitefang14/demand-forecasting.git
-   cd demand-forecasting
-   ```
+### Prerequisites
 
-2. **Install dependencies**
-   - It's recommended to use a virtual environment.
-   - Requirements file (if available):
+- Python 3.7 or higher
+- Jupyter Notebook or JupyterLab
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+Recommended Python packages (install as needed):
 
-   - Or install major libraries manually:
-   ```bash
-   pip install numpy pandas scikit-learn matplotlib seaborn
-   # For deep learning models:
-   pip install tensorflow keras
-   ```
+```bash
+pip install numpy pandas matplotlib scikit-learn statsmodels
+```
+
+### Clone the repository
+
+```bash
+git clone https://github.com/whitefang14/demand-forecasting.git
+cd demand-forecasting
+```
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Or use JupyterLab:
+
+```bash
+jupyter lab
+```
+
+## Repository Structure
+
+```
+.
+├── notebooks/
+│   └── [Jupyter notebooks for various experiments]
+├── data/
+│   └── [Place your datasets here; usually .csv or .xlsx files]
+├── README.md
+└── requirements.txt
+```
+
+- **notebooks/**: Contains the main Jupyter notebooks.
+- **data/**: Place your input data files here (not included in repo).
+- **requirements.txt**: List of Python dependencies (if present).
 
 ## Usage
 
-- Explore the provided Jupyter notebooks in the `notebooks/` directory to understand and run demand forecasting experiments.
-- To preprocess your own data, use the scripts in the `src/` directory.
-- Example workflow:
-  1. Place your data in the `data/` directory.
-  2. Run preprocessing scripts to clean and format the data.
-  3. Choose and configure a forecasting model in the notebook or script.
-  4. Train, evaluate, and visualize the results.
-
-## Project Structure
-
-```
-demand-forecasting/
-│
-├── data/                # Raw and processed datasets
-├── notebooks/           # Jupyter notebooks for experiments
-├── src/                 # Source code for models and utilities
-├── requirements.txt     # Python dependencies
-├── README.md            # Project documentation
-└── LICENSE              # License information
-```
-
-## Models Implemented
-
-- Statistical Models:
-  - ARIMA
-  - SARIMA
-  - Exponential Smoothing
-- Machine Learning Models:
-  - Linear Regression
-  - Random Forest Regressor
-  - XGBoost Regressor
-- Deep Learning Models:
-  - LSTM (Long Short-Term Memory)
-  - GRU (Gated Recurrent Unit)
+1. Place your dataset(s) in the `data/` folder.
+2. Open the relevant notebook in the `notebooks/` directory.
+3. Follow the instructions in the notebook to run analyses or train models.
+4. Modify or extend the notebooks for your own datasets or forecasting problems.
 
 ## Contributing
 
-Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
-
-1. Fork this repository.
-2. Create your feature branch: `git checkout -b my-feature`
-3. Commit your changes: `git commit -am 'Add new feature'`
-4. Push to the branch: `git push origin my-feature`
-5. Open a pull request.
+Contributions are welcome! Please open an issue or submit a pull request for improvements, new notebooks, or bug fixes.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-**Contact:**  
-For questions, feedback, or collaborations, please open an issue in this repository.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
